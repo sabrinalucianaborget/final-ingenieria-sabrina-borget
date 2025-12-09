@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final - Sabrina Borget</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Poppins, Arial, sans-serif;
+            background: linear-gradient(135deg, #fde2e4, #e2f0ff, #eaf8e6);
+            background-size: 300% 300%;
+            animation: gradientMove 10s ease infinite;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            width: 430px;
+            border-radius: 22px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.9s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #364154;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 15px;
+            color: #5b5b5b;
+            margin-bottom: 25px;
+        }
+
+        .data-box {
+            padding: 20px;
+            background: #ffffffd8;
+            border-radius: 14px;
+            text-align: left;
+            border-left: 6px solid #a3c4f3;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .data-box p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #3c3c3c;
+        }
+
+        .data-box strong {
+            color: #445f9d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Proyecto Final de Ingeniería</h1>
+        <p class="subtitle">Aplicación mínima creada para la entrega del trabajo práctico.</p>
+
+        <div class="data-box">
+            <p><strong>Nombre:</strong> Sabrina Borget</p>
+            <p><strong>Legajo:</strong> 84330</p>
+        </div>
+    </div>
+</body>
+</html>
